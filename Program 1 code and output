@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main
+{
+    static Scanner userInput = new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        System.out.print("What is your first name?: ");
+        String firstName = userInput.nextLine();
+        System.out.print("What is your last name?: ");
+        String lastName = userInput.nextLine();
+        System.out.print("What is your age?: ");
+        int age = userInput.nextInt();
+        System.out.print("How many hours of sleep do you get?: ");
+        float sleepAmount = userInput.nextFloat();
+
+        System.out.format("First Name: %20s\n", firstName);
+        System.out.format("Last Name: %21s\n", lastName);
+        System.out.format("Age: %27d\n", age);
+        System.out.format("Average Hours of Sleep: %8.1f\n", sleepAmount);
+    }
+}
+
+
+
+OUTPUT
+
+What is your first name?: Caleb
+What is your last name?: Harding
+What is your age?: 29
+How many hours of sleep do you get?: 6.789
+First Name:                Caleb
+Last Name:               Harding
+Age:                          29
+Average Hours of Sleep:      6.8
