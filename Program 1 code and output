@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+    static Scanner userInput = new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        System.out.print("Please enter you first name: ");
+        String firstName = userInput.nextLine();
+        System.out.print("Please enter you middle name: ");
+        String middleName = userInput.nextLine();
+        System.out.print("Please enter you last name: ");
+        String lastName = userInput.nextLine();
+
+        System.out.print("You, " + firstName + " " + middleName + " " + lastName + ", are an amazing person who is " +
+                "loved by God. Hope you have a incredible day!");
+    }
+}
+
+
+Output:
+Please enter you first name: Caleb
+Please enter you middle name: Daniel
+Please enter you last name: Harding
+You, Caleb Daniel Harding, are an amazing person who is loved by God. Hope you have a incredible day!
