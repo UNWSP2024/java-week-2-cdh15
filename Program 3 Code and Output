@@ -1,0 +1,25 @@
+Program #3
+import java.util.Random;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Random randInt = new Random();
+        int intRange = randInt.nextInt(256);
+        System.out.println(intRange);
+
+        String b = Integer.toBinaryString(intRange);
+        String h = Integer.toHexString(intRange);
+        int a = (int)intRange;
+        System.out.println(a);
+        System.out.println(h);
+        System.out.println(b);
+    }
+}
+
+Output
+30
+30
+1e
+11110
